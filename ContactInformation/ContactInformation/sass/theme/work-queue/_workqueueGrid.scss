@@ -1,0 +1,14 @@
+#newApplicationGrid, #myQueueGrid, #fundDelayGrid, #escalationsGrid {
+    height: calc(100% - 100px);
+}
+
+#newApplicationGrid, #fundDelayGrid, #escalationsGrid .ui-grid-cell-contents {
+    overflow-y: auto !important;
+    text-overflow: unset !important;
+    white-space: unset !important;
+    word-wrap: break-word;
+}
+
+#fundDelayGrid .ui-grid-cell-contents {
+    white-space: unset !important;
+}

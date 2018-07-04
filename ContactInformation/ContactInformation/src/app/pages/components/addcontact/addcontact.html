@@ -1,0 +1,68 @@
+
+<div class="panel panel-primary" ng-controller="addcontactCtrl">
+	<div class="panel-heading">
+		Add Contact
+	</div>
+	<div class="panel-body">
+		<form role="form" name="addContactForm" novalidate>
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">First Name</label>
+						<input type="text" class="form-control"
+							   placeholder="First Name.." ng-model="contact.FirstName"
+							   tabindex="1">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Phone Number</label>
+						<input type="text" name="contact"
+							   class="form-control" ng-model="contact.PhoneNumber"
+							   ng-required="true" ng-pattern="ph_numbr" autocomplete="off"
+							   tabindex="4" />
+						<span style="color:red;" ng-if="addContactForm.contact.$error.required && addContactForm.contact.$dirty">Contact number is a required field</span>
+						<span style="color:red;" ng-show="addContactForm.contact.$error.pattern">Please enter a 10 digit number</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">Last Name</label>
+						<input type="text" class="form-control" id="lastname" name="example-text-input" placeholder="Last Name.." ng-model="contact.LastName" tabindex="2">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Status</label>
+						<select name="beast" id="selectstatus" class="form-control custom-select" ng-model="contact.Status" tabindex="5">
+							<option value="1">Active</option>
+							<option value="0">Deactive</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">Email</label>
+						<input name="email" type="text" class="form-control"
+							   placeholder="Email.."
+							   ng-pattern="eml_add" ng-required="true"
+							   ng-model="contact.Email" tabindex="3"
+							   autocomplete="off" />
+						<span style="color:red;" ng-if="addContactForm.email.$error.required && addContactForm.email.$dirty">Email is a required field</span>
+						<span style="color:red;" ng-show="addContactForm.email.$error.pattern">Invalid Email</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-md-offset-9">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<button type="submit" class="btn btn-primary"
+									ng-click="addContactList(contact)"
+									ng-disabled="addContactForm.$invalid">Add data</button>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-default" ng-click="clearData()">Clear</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

@@ -1,0 +1,2 @@
+<taskpanel interval="1000" caption="captionheadinfldjdih" start-time="taskPanel.startTime" burnt-hours="taskPanel.burntHours" 
+           end-time="" on-pause="TimerPaused();" on-stop="" auto-start="false"></taskpanel>

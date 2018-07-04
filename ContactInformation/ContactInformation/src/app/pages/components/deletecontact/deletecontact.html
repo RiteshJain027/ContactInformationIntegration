@@ -1,0 +1,36 @@
+<div class="panel panel-primary" ng-controller="deletecontactCtrl">
+	<div class="panel-heading">
+		Delete Contact
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="form-label">Select Contact Id</label>
+					<select class="form-control custom-select" ng-model="selectedValue">
+						<option value="-1"> Please Select</option>
+						<option ng-repeat="st in contactList" value="{{st.ContactId}}">{{st.FullName}} - {{st.PhoneNumber}}</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-md-2 col-md-offset-6">
+				<div class="form-group">
+					<label class="form-label" style="color:white;">t</label>
+					<button type="submit" class="form-control btn btn-primary"
+							ng-click="deleteContact()"
+							ng-disabled="selectedValue == '-1'">Delete data</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-8">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

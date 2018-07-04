@@ -1,0 +1,74 @@
+<div class="panel panel-primary" ng-controller="editcontactCtrl">
+	<div class="panel-heading">
+		Edit Contact
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="form-group">
+					<label class="form-label">Select Contact Name</label>
+					<select class="form-control custom-select" ng-change="modifyData()" ng-model="selectedValue">
+						<option value="-1"> Please Select</option>
+						<option ng-repeat="st in contactList" value="{{st.ContactId}}">{{st.FullName}} - {{st.PhoneNumber}}</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<form role="form" name="updateContactForm" novalidate>
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">First Name</label>
+						<input type="text" class="form-control" id="firstname" placeholder="First Name.." ng-model="contact.FirstName">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Phone Number</label>
+						<input type="text" class="form-control" name="contact"
+							   ng-model="contact.PhoneNumber"
+							   ng-required="true" ng-pattern="ph_numbr" autocomplete="off" tabindex="4" />
+						<span style="color:red;" ng-if="updateContactForm.contact.$error.required && updateContactForm.contact.$dirty">Contact number is a required field</span>
+						<span style="color:red;" ng-show="updateContactForm.contact.$error.pattern">Please enter a 10 digit number</span>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">Last Name</label>
+						<input type="text" class="form-control" placeholder="Last Name.." ng-model="contact.LastName">
+					</div>
+					<div class="form-group">
+						<label class="form-label">Status</label>
+						<select class="form-control" ng-model="contact.Status">
+							<option value="1">Active</option>
+							<option value="0">Deactive</option>
+						</select>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="form-group">
+						<label class="form-label">Email</label>
+						<input type="text" class="form-control" name="email"
+							   placeholder="Email.." ng-model="contact.Email" autocomplete="off"
+							   ng-pattern="eml_add" ng-required="true" tabindex="3">
+						<span style="color:red;" ng-if="updateContactForm.email.$error.required && updateContactForm.email.$dirty">Email is a required field</span>
+						<span style="color:red;" ng-show="updateContactForm.email.$error.pattern">Invalid Email</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-md-offset-9">
+					<div class="row">
+						<div class="col-md-5 col-md-offset-3">
+							<button type="submit" class="btn btn-primary"
+									ng-click="updateContact(contact)"
+									ng-disabled="updateContactForm.$invalid">Update data</button>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-default"
+									ng-click="clearData()">Clear</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

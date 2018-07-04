@@ -1,0 +1,45 @@
+<div ng-controller="addcontactCtrl">
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">First Name</label>
+				<input type="text" class="form-control" id="firstname" placeholder="First Name.." ng-model="contact.FirstName">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Phone Number</label>
+				<input type="text" name="field-name" id="phonenumber" class="form-control" ng-model="contact.PhoneNumber"/>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">Last Name</label>
+				<input type="text" class="form-control" id="lastname" name="example-text-input" placeholder="Last Name.." ng-model="contact.LastName">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Status</label>
+				<select name="beast" id="selectstatus" class="form-control custom-select" ng-model="contact.Status">
+					<option value="1">Active</option>
+					<option value="0">De-Active</option>
+				</select>
+			</div>
+			<!--<div class="form-group">
+				<label class="form-label">Telephone with Code Area</label>
+				<input type="text" name="field-name" id="telephonenumber" class="form-control" data-mask="(00) 0000-0000" data-mask-clearifnotmatch="true" />
+			</div>-->
+
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">Email</label>
+				<input type="text" class="form-control" id="emailid" name="example-text-input" placeholder="Email.." ng-model="contact.Email">
+			</div>
+
+		</div>
+
+	</div>
+	<div class="row">
+		<!--<button type="button" class="btn btn-danger" ng-click="clearData()">Clear</button>-->
+		<button type="button" class="btn btn-primary" ng-click="addContactList(contact)">Add data</button>
+	</div>
+
+</div>

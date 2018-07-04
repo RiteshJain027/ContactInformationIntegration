@@ -1,0 +1,18 @@
+.fileListPanel{
+    height:calc(100vh - 300px);
+}
+.fileUploadPanelButtons{
+    margin-top:-7px;
+}
+/*Axis:TODO: border color shold come from variable*/
+.scrollableContainer { height: inherit; }
+.scrollArea table tbody tr td {
+    border-right: 1px solid #d5d5d5;
+}
+.fileListTable{
+    height:calc(100vh - 330px);
+}
+.progressMargin{
+     margin-bottom: 0px !important;
+     margin-top:8px;
+}

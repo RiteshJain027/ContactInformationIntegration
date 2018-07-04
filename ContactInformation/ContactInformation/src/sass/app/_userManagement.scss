@@ -1,0 +1,31 @@
+.margin5 {
+    margin: 5px;
+}
+
+.hasError {
+    border: 1px solid #ed7878 !important;
+}
+
+.errorMessage {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #a94442 !important;
+}
+
+.cursorPointer {
+    cursor: pointer !important;
+}
+
+.noDataAvailable {
+    position: absolute;
+    top: 90px;
+    opacity: 0.7;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.well {
+    background-color: white;
+}

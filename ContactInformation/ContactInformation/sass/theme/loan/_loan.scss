@@ -1,0 +1,12 @@
+#loanDetailsGrid {
+    height:calc(100vh - 160px) !important;
+}
+#loanTaskExceptionGrid{
+    height: calc(100% - 100px);
+}
+#loanTaskExceptionGrid .ui-grid-cell-contents {
+    overflow-y:auto;
+    text-overflow:unset;
+    white-space:unset;
+    word-wrap:break-word;
+}

@@ -1,0 +1,16 @@
+.ui-grid-pager-panel abbr[title] {
+    text-decoration: none;
+    border-bottom: none !important;
+    cursor: unset !important;
+}
+.ui-grid-cell-contents {
+    margin-top:7px;
+}
+
+.ui-grid-pager-control .ui-grid-pager-max-pages-number {
+   vertical-align:unset;
+}
+
+input[type="text"].ui-grid-filter-input{
+    height:18px;
+}

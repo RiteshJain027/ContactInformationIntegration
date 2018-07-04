@@ -1,0 +1,232 @@
+.panel-body {
+    padding-bottom: 0px;
+}
+
+.panel-footer {
+    padding-top: 0px !important;
+}
+
+.checkListCentral {
+    width: 3% !important;
+    padding: 0px !important;
+}
+
+.checkListPanel {
+    width: 48% !important;
+}
+
+.checkListCollapse {
+    width: 96.5% !important;
+}
+
+.expand-margin {
+    margin-left: 10px !important;
+}
+
+.label-heading {
+    padding-top: 15px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-10p {
+    margin-top: 10%;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-10p {
+    margin-bottom: 10%;
+}
+
+.margin-left-12 {
+    margin-left: 12px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    border: ridge 0.5px !important;
+    border-color: #706f6f;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 7px 7px 0px 0px;
+    text-transform: uppercase;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordianActive, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.loader-text {
+    padding-left: 7px;
+    font-size: 18px
+}
+
+.font-size-13i {
+    font-size: 13px !important;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.padding-0 {
+    padding: 0px;
+}
+
+.padding-0-i {
+    padding: 0px !important;
+}
+
+
+.padding-15 {
+    padding: 15px;
+}
+
+.padding-right-0 {
+    padding-right: 0px;
+}
+
+.padding-right-0i {
+    padding-right: 0px !important;
+}
+
+.padding-right-10 {
+    padding-right: 10px;
+}
+
+.padding-left-0 {
+    padding-left: 0px;
+}
+
+.padding-left-10 {
+    padding-left: 10px;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-right-i {
+    float: right !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.panel-y-scroll {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.option-menu {
+    background-color: #e5dbdb;
+    padding: 5px;
+    bottom: 15px
+}
+
+.icon-hover:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.button-wrapper-checklist {
+    margin-bottom: 45%;
+    text-align: center;
+}
+
+.span-disable {
+    pointer-events: none;
+}
+
+.accordion-icons {
+    font-size: 15px;
+    padding: 0px;
+    text-align: right;
+}
+
+.subsection-icons {
+    text-align: center;
+    font-size: 15px;
+}
+
+.icons-bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+}
+
+.hr-line {
+    margin: 0px !important;
+    border-top: 1px solid gainsboro;
+    margin-left: -8px !important;
+    margin-right: -16px !important;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-white-i {
+    color: white !important;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.color-red {
+    color: red;
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.section-btn-position {
+    left: 75%;
+    position: relative;
+}
+
+.border-radius-5 {
+    border-radius: 5px;
+}
+
+.loan-number {
+    cursor: context-menu;
+    pointer-events: none;
+}

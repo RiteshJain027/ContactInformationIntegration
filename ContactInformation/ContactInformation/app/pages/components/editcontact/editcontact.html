@@ -1,0 +1,76 @@
+<!-- todo: remove whole block -->
+<div ng-controller="editcontactCtrl">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="form-group">
+				<label class="form-label">Select Contact Name</label>
+				<select class="form-control custom-select"  ng-change="modifyData()" ng-model="selectedValue">
+					<option value=""> Please Select</option>
+					<option ng-repeat="st in contactList" value="{{st.ContactId}}">{{st.FullName}} - {{st.PhoneNumber}}</option>
+				</select>								
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">First Name</label>
+				<input type="text" class="form-control" id="firstname" placeholder="First Name.." ng-model="contact.FirstName">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Phone Number</label>
+				<input type="text" name="field-name" id="phonenumber" class="form-control" ng-model="contact.PhoneNumber" />
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">Last Name</label>
+				<input type="text" class="form-control" id="lastname" name="example-text-input" placeholder="Last Name.." ng-model="contact.LastName">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Status</label>
+				<select name="beast" id="selectstatus" class="form-control custom-select" ng-model="contact.Status">
+					<option value="1">Active</option>
+					<option value="0">De-Active</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4">
+			<div class="form-group">
+				<label class="form-label">Email</label>
+				<input type="text" class="form-control" id="emailid" name="example-text-input" placeholder="Email.." ng-model="contact.Email">
+			</div>
+
+		</div>
+
+	</div>
+	<div class="row">
+		<!--<button type="submit" class="btn btn-secondary ml-auto" ng-click="clearData()">Clear</button>-->
+		<button type="submit" class="btn btn-primary" ng-click="update()">Update data</button>
+	</div>
+
+	<div class="row">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Phone Number</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+
+
+			<tbody>
+				<tr ng-repeat="data in contactList">
+					<td>{{data.FirstName}}</td>
+					<td>{{data.LastName}}</td>
+					<td>{{data.Email}}</td>
+					<td>{{data.PhoneNumber}}</td>
+					<td>{{data.Status}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

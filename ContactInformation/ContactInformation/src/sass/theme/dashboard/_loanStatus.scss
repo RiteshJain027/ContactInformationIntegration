@@ -1,0 +1,75 @@
+﻿#loanStatusGrid {
+    height: calc(100% - 100px);
+}
+
+.fa-icon-class {
+    font-size: 28px;
+    margin-top: 9px;
+}
+
+.fa-icon-active {
+    cursor: pointer;
+    color: green;
+}
+
+.loanStatusCellClass .ui-grid-cell-contents {
+    margin-top: 10px;
+}
+
+.loanStatusImageCellClass {
+    text-align: center;
+}
+
+.circle-stack {
+    position: relative;
+    display: inline-block;
+    margin-top: 7px;
+    width: 24px;
+    height: 24px;
+    background: green;
+    border-radius: 50%;
+}
+
+.fa-circle,
+.points-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.fa-circle {
+    font-size: 16px;
+    color: #c0cff6;
+}
+
+.points-indicator {
+    color: #1f0e3e;
+    position: absolute;
+    font-weight: bolder;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#loanStatusGrid .ui-grid-cell-contents {
+    overflow-y: auto;
+    text-overflow: unset;
+    white-space: unset;
+    word-wrap: break-word;
+}
+
+#loanStatusGrid .alignCenter {
+    text-align: center !important;
+}
+
+.ui-grid-row:last-child .ui-grid-cell {
+    border-bottom-width: 1px !important;
+}
+
+.btn-release{
+    background-color:#ec7b02;
+    border-color:#dfb81c;
+    color:white;
+}

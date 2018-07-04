@@ -1,0 +1,26 @@
+.stTable {
+    width: 100%;
+}
+
+.stThead, .stThead th, .stTbody, .stTbody tr, .stTbody td {
+    display: block;
+}
+
+.stTr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.stThead th {
+    height: 47px;
+}
+
+.stTbody {
+    overflow-y: auto;
+}
+
+.stTbody td, .stThead th {
+    float: left;
+}

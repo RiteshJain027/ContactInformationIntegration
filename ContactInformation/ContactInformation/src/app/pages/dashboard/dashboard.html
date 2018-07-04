@@ -1,0 +1,36 @@
+<div class="panel panel-primary" ng-controller="dashoardCtrl">
+	<div class="panel-heading">
+		Contact Information
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Email</th>
+						<th>Phone Number</th>
+						<th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="data in contact">
+						<td>{{data.FirstName}}</td>
+						<td>{{data.LastName}}</td>
+						<td>{{data.Email}}</td>
+						<td>{{data.PhoneNumber}}</td>
+						<td>
+							<span ng-if="data.Status == true">
+								Active
+							</span>
+							<span ng-if="data.Status == false">
+								Deactive
+							</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
